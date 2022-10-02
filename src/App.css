@@ -1,6 +1,6 @@
  /*----- Variables Optional -----*/  
  :root {
-  /* Forest & Mountain Custom Color Palette */
+  /* Custom Color Palette */
   --egg-shell: #faf9f6;
   --dark-greyblue: #24344d;
   --royal-blue: #0504aa;
@@ -25,12 +25,6 @@ body {                     /* Can alternatively define in html {} or :root {} */
   padding: 10px;
 }
 
-/* ----- Anchors ----- Text links */
-a {}
-a:link {}
-a:hover {}
-a:active {}
-a:visited {}
 
 /*  ----- Navigation ----- Override text links for navigation only.  */
 nav {
@@ -92,56 +86,6 @@ main {
   margin: 25px;
   padding: 50px;
 }
-section {}
-  article {}
-    #topic1 {}
-    #topic2 {}
-    #gallery1 {}
-    #gallery2 {}
-div {}
-aside {}
-footer {}
-
-/*  -----  Typography  ----- */
-p {}
-br {}
-ol, ul, dl {}
-li {}
-dt {}
-dd {}
-
-h1, h2, h3, h4, h5, h6 {} /* Define consistant font family.*/
-h1 {}
-h2 {}
-h3 {}
-h4 {}
-h5 {}
-h6 {}
-
-abbr {}
-acronym {}
-address {}
-blockquote {}
-  q {}
-  cite {}
-em {}
-hr {}
-mark {}
-s {}
-span {}
-strong {}
-sub {}
-sup {}
-time {}
-
-/*  ----- Coding or instructional typography ----- */
-pre {}
-code {}
-kbd {}
-samp {}
-var {}
-del {} 
-ins {}
 
 /*  ----- Table ----- */
 table {
@@ -181,13 +125,6 @@ tr:nth-child(even) {
   background-color: var(--blue-transparent);
   color: var(--egg-shell);
 }
-td:nth-child(1) {}
-colgroup {}
-data {}
-datalist {}
-thead {}
-tbody {}
-tfoot {}
 
 /*  ----- Form ----- */
 form {
@@ -231,49 +168,6 @@ select {
   font-size: 20px;
   padding: 10px 15px;
  }
-
-output {}
-meter {}
-progress {}
-optgroup {}
-option {}
-textarea {}
-
-/* ----- Media ----- */
-figure {}
-  figcaption {}
-img {}
-svg {}
-picture {}
-  source {}
-iframe {}
-video {}
-audio {}
-embed {}
-object {}
-
-
-
-/*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
-.floatright {}
-.floatleft {}
-.center-middle {}
-
-.ten {}
-.twenty {}
-.thirty {}
-.forty {}
-.fifty {}
-.sixty {}
-.seventy {}
-.eighty {}
-
-.radius {}
-.circle {}
-.boxshadow {}
-.tshadow {} 
-.gradient {}
-.shape {}
 
 @keyframes App-logo {}
 
