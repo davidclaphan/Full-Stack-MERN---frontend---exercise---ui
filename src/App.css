@@ -1,38 +1,289 @@
-.App {
+ /*----- Variables Optional -----*/  
+ :root {
+  /* Forest & Mountain Custom Color Palette */
+  --egg-shell: #faf9f6;
+  --dark-greyblue: #24344d;
+  --royal-blue: #0504aa;
+  --neon-green: #39FF14;
+  --delete-red: #ff0000;
+  --light-blue: #a7bbcb; 
+  --blue-transparent: hsla(217, 36%, 22%, 0.5);
+  --beige: #f5f5dc;
+  --mustard: #b78428;
+  --mustard-transparent: hsla(39, 64%, 44%, 0.75);
+  --light-grey: #939799;
+  --main-back: #d3d3d3;
+  }
+
+/*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+body {                     /* Can alternatively define in html {} or :root {} */
+  background-color: var(--light-grey);  
+  color: var(--dark-greyblue);
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* ----- Anchors ----- Text links */
+a {}
+a:link {}
+a:hover {}
+a:active {}
+a:visited {}
+
+/*  ----- Navigation ----- Override text links for navigation only.  */
+nav {
   text-align: center;
+  background-color: var(--dark-greyblue);
+  line-height: 25px;
+  margin: 200px 15px 15px 15px;
+  padding: 0px 0px 0px 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav a {
+  background-color: var(--egg-shell);
+  color: var(--royal-blue);
+  border: 5px solid var(--royal-blue);
+  border-radius: 10px 10px 10px 10px;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-right: 20px;
+  padding: 15px 15px 15px 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav a:hover{
+  color: var(--dark-greyblue);
+  border: 7px solid var(--neon-green);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*  ----- Page layout blocks -----  */
+header {
+  background-color: var(--dark-greyblue);
+  color: var(--egg-shell);
+  font-size: 20px;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1% 0 0 0;
 }
 
-.App-link {
-  color: #61dafb;
+footer {
+  background-color: var(--dark-greyblue);
+  color: var(--egg-shell);
+  font-size: 20px;
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1% 0 0 0;
+  padding: 1px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+main {
+  background-color: var(--main-back);
+  color: var(--royal-blue);
+  border: 5px solid var(--egg-shell);
+  font-size: 18px;
+  font-weight: 2;
+  margin: 25px;
+  padding: 50px;
 }
+section {}
+  article {}
+    #topic1 {}
+    #topic2 {}
+    #gallery1 {}
+    #gallery2 {}
+div {}
+aside {}
+footer {}
+
+/*  -----  Typography  ----- */
+p {}
+br {}
+ol, ul, dl {}
+li {}
+dt {}
+dd {}
+
+h1, h2, h3, h4, h5, h6 {} /* Define consistant font family.*/
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+
+abbr {}
+acronym {}
+address {}
+blockquote {}
+  q {}
+  cite {}
+em {}
+hr {}
+mark {}
+s {}
+span {}
+strong {}
+sub {}
+sup {}
+time {}
+
+/*  ----- Coding or instructional typography ----- */
+pre {}
+code {}
+kbd {}
+samp {}
+var {}
+del {} 
+ins {}
+
+/*  ----- Table ----- */
+table {
+  border-collapse:collapse;
+  border: 1px solid var(--egg-shell);
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 25px;
+}
+caption {
+  padding: 10px;
+}
+
+tr {
+  border: 1px solid var(--royal-blue);
+  padding:15px;
+  background-color: var(--light-blue);
+  color: var(--royal-blue);
+}
+
+th {
+  border: 1px solid var(--egg-shell);
+  background-color: var(--dark-greyblue);
+  color: var(--egg-shell);
+  padding:15px;
+
+}
+td {
+  border: 1px solid var(--royal-blue);
+  padding:10px;
+}
+
+tr:nth-child(even) {
+  background-color: var(--blue-transparent);
+  color: var(--egg-shell);
+}
+td:nth-child(1) {}
+colgroup {}
+data {}
+datalist {}
+thead {}
+tbody {}
+tfoot {}
+
+/*  ----- Form ----- */
+form {
+  color: var(--royal-blue);
+  font-size: 20px;
+}
+
+button {
+  font-size: 20px;
+  padding: 10px 15px;
+  color: var(--royal-blue);
+  border: 3px solid var(--royal-blue);
+}
+button:hover {
+  background-color: var(--mustard);
+  color: var(--egg-shell);
+}
+
+input {
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  color: var(--dark-greyblue);
+}
+
+fieldset {
+  text-align: center;
+  border: 1px solid var(--royal-blue);
+}
+
+legend {
+  font-size: 25px;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+}
+
+select {
+  font-size: 20px;
+  padding: 10px 15px;
+ }
+
+output {}
+meter {}
+progress {}
+optgroup {}
+option {}
+textarea {}
+
+/* ----- Media ----- */
+figure {}
+  figcaption {}
+img {}
+svg {}
+picture {}
+  source {}
+iframe {}
+video {}
+audio {}
+embed {}
+object {}
+
+
+
+/*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+.floatright {}
+.floatleft {}
+.center-middle {}
+
+.ten {}
+.twenty {}
+.thirty {}
+.forty {}
+.fifty {}
+.sixty {}
+.seventy {}
+.eighty {}
+
+.radius {}
+.circle {}
+.boxshadow {}
+.tshadow {} 
+.gradient {}
+.shape {}
+
+@keyframes App-logo {}
+
+/*   ===== TABLET  media query overrides mobile styles ===== */
+@media all and (min-width: 600px) {}
+
+/*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+@media all and (min-width: 1080px) {}
+
+/*   ===== PRINT  media query overrides previous styles =====  */
+@media print {}
+
+
